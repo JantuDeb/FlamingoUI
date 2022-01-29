@@ -1,3 +1,4 @@
+@import url(./../components/main.css);
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +7,12 @@
 
 body{
     overflow:hidden;
+    font-family: var(--fu-font-sans-serif);
+    background-color: var(--fu-body-bg);
+    color: var(--fu-body-color);
 }
 header{
-    background-color: #1C64F2;
+    background-color: var(--fu-primary);
     padding: 0.5rem;
     color: white;
 }
@@ -20,14 +24,15 @@ header{
 
 
 .sidebar{
-    width: 200px;
-    background-color: aliceblue;
-    /* overflow: auto; */
+    width: 250px;
+    background-color: var(--fu-blue-lighter);
     padding-left: 1rem;
 }
 
 .content-main{
     flex-grow: 1;
+    overflow-y: auto;
+    height: 90vh;
 }
 
 .nav{
@@ -38,7 +43,6 @@ header{
     text-decoration: none;
     padding: 0.5rem;
     overflow: auto;
-    color: #2c2f33;
     height: 100vh;
 }
 
@@ -53,4 +57,13 @@ header{
 
 .nav-list li a:hover{
     color: #1C64F2;
+}
+
+
+/* AVATAR */
+
+.avatar-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
