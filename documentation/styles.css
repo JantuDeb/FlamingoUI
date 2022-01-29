@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow:hidden;
+}
+header{
+    background-color: #1C64F2;
+    padding: 0.5rem;
+    color: white;
+}
+
+.container{
+    display: flex;
+    overflow:hidden;
+}
+
+
+.sidebar{
+    width: 200px;
+    background-color: aliceblue;
+    /* overflow: auto; */
+    padding-left: 1rem;
+}
+
+.content-main{
+    flex-grow: 1;
+}
+
+.nav{
+    overflow: auto;
+}
+
+.nav-list{
+    text-decoration: none;
+    padding: 0.5rem;
+    overflow: auto;
+    color: #2c2f33;
+    height: 100vh;
+}
+
+.nav-list li{
+    height: 2rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #4B5563;
+}
+
+.nav-list li a:hover{
+    color: #1C64F2;
+}
