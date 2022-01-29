@@ -59,7 +59,16 @@ header{
     color: #1C64F2;
 }
 
-
+.btn-copy{
+    background-color: transparent;
+    border-top:2px solid var(--fu-orange);
+    border-left:2px solid var(--fu-orange);
+    border-right:2px solid var(--fu-orange);
+    padding: 0.5rem;
+    color: var(--fu-primary);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
 /* AVATAR */
 
 .avatar-container{
