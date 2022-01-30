@@ -29,46 +29,34 @@
 
 /* TEXT AVATAR */
 
+.avatar-text{
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--fu-white);
+}
+
 .avatar-text-s{
     background-color: var(--fu-blue);
     width: 4rem;
     height: 4rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--fu-white);
 }
 
 .avatar-text-m{
     background-color: var(--fu-green);
     width: 5rem;
     height: 5rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--fu-white);
 }
 
 .avatar-text-l{
     background-color: var(--fu-red);
     width: 6rem;
     height: 6rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--fu-white);
 }
 
 .avatar-text-xl{
     background-color: var(--fu-indigo);
     width: 8rem;
     height: 8rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--fu-white);
 }
