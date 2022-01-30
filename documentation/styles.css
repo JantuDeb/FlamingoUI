@@ -1,3 +1,6 @@
+@import url(./../components/main.css);
+@import url("./css/avatar.css");
+@import url("./css/alert.css");
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +9,12 @@
 
 body{
     overflow:hidden;
+    font-family: var(--fu-font-sans-serif);
+    background-color: var(--fu-body-bg);
+    color: var(--fu-body-color);
 }
 header{
-    background-color: #1C64F2;
+    background-color: var(--fu-primary);
     padding: 0.5rem;
     color: white;
 }
@@ -20,14 +26,15 @@ header{
 
 
 .sidebar{
-    width: 200px;
-    background-color: aliceblue;
-    /* overflow: auto; */
+    width: 250px;
+    background-color: var(--fu-blue-lighter);
     padding-left: 1rem;
 }
 
 .content-main{
     flex-grow: 1;
+    overflow-y: auto;
+    height: 88vh;
 }
 
 .nav{
@@ -38,7 +45,6 @@ header{
     text-decoration: none;
     padding: 0.5rem;
     overflow: auto;
-    color: #2c2f33;
     height: 100vh;
 }
 
@@ -53,4 +59,30 @@ header{
 
 .nav-list li a:hover{
     color: #1C64F2;
+}
+
+.btn-copy{
+    background-color: transparent;
+    border-top:2px solid var(--fu-orange);
+    border-left:2px solid var(--fu-orange);
+    border-right:2px solid var(--fu-orange);
+    padding: 0.5rem;
+    color: var(--fu-primary);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* AVATAR */
+
+.avatar-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* ALERT */
+
+.alert-container{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1rem;
 }
