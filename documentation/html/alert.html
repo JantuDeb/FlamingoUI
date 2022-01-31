@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9bd103101b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./../styles.css" />
+    <title>FlamingoUI</title>
+  </head>
+  <body>
+    <header>
+      <h1>FlamingoUI</h1>
+    </header>
+    <div class="container">
+      <aside class="sidebar">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><h6>GETTING STARTED</h6></li>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Quickstart</a></li>
+            <li><h6>COMPONENTS</h6></li>
+            <li><a href="./avatar.html">Avatar</a></li>
+            <li><a href="./alert.html">Alert</a></li>
+            <li><a href="./badge.html">Badge</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Card</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">Input</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="content-main gx-2">
+        <!-- Alert -->
+        <p class="text-6">Alert</p>
+        <div class="alert-container snippet gy-2">
+          <div class="alert alert-info">
+            <span>Info alert!</span> Change a few things up and try submitting
+            again.
+          </div>
+
+          <div class="alert alert-success">
+            <span>Success alert!!</span> Change a few things up and try
+            submitting again.
+          </div>
+
+          <div class="alert alert-danger">
+            <span>Danger alert!</span> Change a few things up and try submitting
+            again.
+          </div>
+
+          <div class="alert alert-warning">
+            <span>Warning alert!</span> Change a few things up and try
+            submitting again.
+          </div>
+        </div>
+
+        <div class="html-code"></div>
+
+        <!-- Alert with a Icon -->
+        <p class="text-6">Alert with a Icon</p>
+        <div class="alert-container snippet gy-2">
+          <div class="alert alert-info">
+            <i class="fas fa-info-circle"></i> Change a few things up and try
+            submitting again.
+          </div>
+
+          <div class="alert alert-success">
+            <i class="fas fa-info-circle"></i> Change a few things up and try
+            submitting again.
+          </div>
+
+          <div class="alert alert-danger">
+            <i class="fas fa-info-circle"></i> Change a few things up and try
+            submitting again.
+          </div>
+
+          <div class="alert alert-warning">
+            <i class="fas fa-info-circle"></i> Change a few things up and try
+            submitting again.
+          </div>
+        </div>
+
+        <div class="html-code"></div>
+
+        <!-- Alert with additional content -->
+        <p class="text-6">Alert with additional content</p>
+        <div class="alert-container snippet gy-2">
+          <div class="alert alert-success alert-content">
+            <span><i class="fas fa-info-circle"></i> This is a success alert</span>
+            <p>
+              More info about this info danger goes here. This example text is
+              going to run a bit longer so that you can see how spacing within
+              an alert works with this kind of content.
+            </p>
+            <div class="alert-action">
+              <button class="btn-success-view">View more</button>
+              <button class="btn-success-dismiss">Dismiss</button>
+            </div>
+          </div>
+
+          <div class="alert alert-danger alert-content">
+            <span><i class="fas fa-info-circle"></i> This is a danger alert</span>
+            <p>
+              More info about this info danger goes here. This example text is
+              going to run a bit longer so that you can see how spacing within
+              an alert works with this kind of content.
+            </p>
+            <div class="alert-action">
+              <button class="btn-danger-view">View more</button>
+              <button class="btn-danger-dismiss">Dismiss</button>
+            </div>
+          </div>
+
+          <div class="alert alert-warning alert-content">
+            <span><i class="fas fa-info-circle"></i> This is a warning alert</span>
+            <p>
+              More info about this info danger goes here. This example text is
+              going to run a bit longer so that you can see how spacing within
+              an alert works with this kind of content.
+            </p>
+            <div class="alert-action">
+              <button class="btn-warning-view">View more</button>
+              <button class="btn-warning-dismiss">Dismiss</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="html-code"></div>
+      </main>
+    </div>
+
+    <!-- script -->
+    <script src="./../index.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
