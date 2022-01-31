@@ -55,6 +55,8 @@
   --fu-body-line-height: 1.5;
   --fu-body-color: #212529;
   --fu-body-bg: #fff;
+
+  --fu-btn-padding:0.3rem 0.5rem;
 }
 
 *,
