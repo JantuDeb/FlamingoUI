@@ -1,14 +1,20 @@
 @import url("./avatar.css");
+@import url("./badge.css");
 :root {
   --fu-blue: #0d6efd;
+  --fu-blue-light:#C3DDFD;
   --fu-blue-lighter: #ebf5ff;
+  --fu-blue-dark:#1E429F;
   --fu-indigo: #6610f2;
   --fu-purple: #6f42c1;
   --fu-pink: #d63384;
   --fu-red: #dc3545;
+  --fu-red-light:#FDE8E8;
   --fu-orange: #fd7e14;
   --fu-yellow: #ffc107;
+  --fu-yellow-light:#FDF6B2;
   --fu-green: #198754;
+  --fu-green-light:#DEF7EC;
   --fu-teal: #20c997;
   --fu-cyan: #0dcaf0;
   --fu-white: #fff;
@@ -29,7 +35,7 @@
   --fu-secondary: #6c757d;
   --fu-success: #198754;
   --fu-info: #0dcaf0;
-  --fu-warning: #ffc107;
+  --fu-warning: #a16207;
   --fu-danger: #dc3545;
   --fu-light: #f8f9fa;
   --fu-dark: #212529;
@@ -50,6 +56,8 @@
   --fu-body-line-height: 1.5;
   --fu-body-color: #212529;
   --fu-body-bg: #fff;
+
+  --fu-btn-padding:0.3rem 0.5rem;
 }
 
 *,
@@ -210,6 +218,7 @@ select {
 [role="button"],
 button {
   cursor: pointer;
+  padding: 0.3rem 0.5rem;
 }
 
 textarea {
