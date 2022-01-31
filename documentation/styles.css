@@ -1,6 +1,7 @@
 @import url(./../components/main.css);
 @import url("./css/avatar.css");
 @import url("./css/alert.css");
+@import url("./css/badge.css");
 *{
     margin: 0;
     padding: 0;
@@ -71,9 +72,13 @@ header{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+
+.language-html{
+    max-height: 40vh;
+}
 /* AVATAR */
 
-.avatar-container{
+.avatar-container, .badge-container{
     display: flex;
     gap: 2rem;
     align-items: center;
