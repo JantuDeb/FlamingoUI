@@ -1,5 +1,7 @@
 @import url("./avatar.css");
 @import url("./badge.css");
+@import url("./alert.css");
+
 :root {
   --fu-blue: #0d6efd;
   --fu-blue-light:#C3DDFD;
