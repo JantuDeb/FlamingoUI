@@ -1,0 +1,223 @@
+/* Default Button */
+.btn-primary {
+  background-color: var(--fu-primary);
+  color: white;
+}
+
+.btn-link {
+  background-color: transparent;
+  color: var(--fu-primary);
+  text-decoration-line: underline;
+}
+/* focus */
+.btn-primary:focus,
+.btn-link:focus {
+  box-shadow: var(--fu-blue-light) 0px 0px 0px 3px;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--fu-primary);
+  border: 1px solid var(--fu-primary);
+}
+
+.btn-dark {
+  background-color: var(--fu-gray-800);
+  color: white;
+}
+
+/* focus */
+.btn-secondary:focus,
+.btn-dark:focus {
+  box-shadow: var(--fu-gray-400) 0px 0px 0px 3px;
+}
+
+.btn-green {
+  background-color: var(--fu-green);
+  color: white;
+}
+
+/* focus */
+.btn-green:focus {
+  box-shadow: var(--fu-green-light) 0px 0px 0px 3px;
+}
+
+.btn-red {
+  background-color: var(--fu-red);
+  color: white;
+}
+
+/* focus */
+.btn-red:focus {
+  box-shadow: var(--fu-red-light) 0px 0px 0px 3px;
+}
+
+.btn-purple {
+  background-color: var(--fu-purple);
+  color: white;
+}
+
+/* focus */
+.btn-purple:focus {
+  box-shadow: var(--fu-purple-light) 0px 0px 0px 3px;
+}
+
+/* GRADIENT BUTTON */
+
+.btn-grad-blue {
+  background: var(--fu-grad-blue);
+  color: white;
+}
+
+.btn-grad-green {
+  background: var(--fu-grad-green);
+  color: white;
+}
+
+.btn-grad-cyan {
+  background: var(--fu-grad-cyan);
+  color: white;
+}
+
+.btn-grad-teal {
+  background: var(--fu-grad-teal);
+  color: white;
+}
+
+.btn-grad-red {
+  background: var(--fu-grad-red);
+  color: white;
+}
+
+.btn-grad-pink {
+  background: var(--fu-grad-pink);
+  color: white;
+}
+
+
+.btn-grad-purple {
+  background: var(--fu-grad-purple);
+  color: white;
+}
+
+
+/* OOULINE BUTTON */
+
+.btn-outline-primary{
+    background-color: transparent;
+    border: 1px solid var(--fu-primary);
+    color:  var(--fu-primary);
+}
+.btn-outline-primary:hover{
+    background-color: var(--fu-primary);
+    color: white;
+}
+
+
+.btn-outline-secondary{
+    background-color: transparent;
+    border: 1px solid var(--fu-secondary);
+    color:  var(--fu-secondary);
+}
+.btn-outline-secondary:hover{
+    background-color: var(--fu-secondary);
+    color: white;
+}
+
+
+.btn-outline-success{
+    background-color: transparent;
+    border: 1px solid var(--fu-success);
+    color:  var(--fu-success);
+}
+.btn-outline-success:hover{
+    background-color: var(--fu-success);
+    color: white;
+}
+
+.btn-outline-danger{
+    background-color: transparent;
+    border: 1px solid var(--fu-danger);
+    color:  var(--fu-danger);
+}
+.btn-outline-danger:hover{
+    background-color: var(--fu-danger);
+    color: white;
+}
+
+.btn-outline-warning{
+    background-color: transparent;
+    border: 1px solid var(--fu-warning);
+    color:  var(--fu-warning);
+}
+.btn-outline-warning:hover{
+    background-color: var(--fu-warning);
+    color: white;
+}
+
+.btn-outline-info{
+    background-color: transparent;
+    border: 1px solid var(--fu-info);
+    color:  var(--fu-info);
+}
+.btn-outline-info:hover{
+    background-color: var(--fu-info);
+    color: white;
+}
+
+.btn-outline-dark{
+    background-color: transparent;
+    border: 1px solid var(--fu-dark);
+    color:  var(--fu-dark);
+}
+.btn-outline-dark:hover{
+    background-color: var(--fu-dark);
+    color: white;
+}
+
+
+/* ICON BUTTON */
+.btn-social{
+    display: inline-flex;
+    align-items: center;
+    color: white;
+}
+
+.btn-social-icon{
+    width: 1rem;
+    height: 1rem;
+    margin: 2px;
+    color: white;
+}
+
+.facebook{
+    background-color: #3b5998;
+}
+
+.twitter{
+    background-color: #1da1f2;
+}
+
+.github{
+    background-color: #24292F;
+}
+
+.google{
+    background-color: #4285F4;
+}
+
+
+/* Floating Button */
+.floating{
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 15%) 0px 0.5rem 1rem 
+}
+
+.btn-floating-text{
+    box-shadow: rgb(0 0 0 / 15%) 0px 0.5rem 1rem 
+}
+
