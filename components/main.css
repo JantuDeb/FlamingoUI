@@ -1,22 +1,24 @@
 @import url("./avatar.css");
 @import url("./badge.css");
 @import url("./alert.css");
+@import url("./button.css");
 
 :root {
   --fu-blue: #0d6efd;
-  --fu-blue-light:#C3DDFD;
+  --fu-blue-light: #c3ddfd;
   --fu-blue-lighter: #ebf5ff;
-  --fu-blue-dark:#1E429F;
+  --fu-blue-dark: #1e429f;
   --fu-indigo: #6610f2;
   --fu-purple: #6f42c1;
+  --fu-purple-light: #d8b4fe;
   --fu-pink: #d63384;
   --fu-red: #dc3545;
-  --fu-red-light:#FDE8E8;
+  --fu-red-light: #fca5a5;
   --fu-orange: #fd7e14;
   --fu-yellow: #ffc107;
-  --fu-yellow-light:#FDF6B2;
+  --fu-yellow-light: #fdf6b2;
   --fu-green: #198754;
-  --fu-green-light:#DEF7EC;
+  --fu-green-light: #bbf7d0;
   --fu-teal: #20c997;
   --fu-cyan: #0dcaf0;
   --fu-white: #fff;
@@ -59,7 +61,17 @@
   --fu-body-color: #212529;
   --fu-body-bg: #fff;
 
-  --fu-btn-padding:0.3rem 0.5rem;
+  --fu-btn-padding: 0.6rem 1rem;
+  --fu-shadow-gray: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+  /* Gradient */
+  --fu-grad-blue: linear-gradient(to right, #3b82f6, #2563eb, #1d4ed8);
+  --fu-grad-green: linear-gradient(to right, #4ade80, #22c55e, #16a34a);
+  --fu-grad-cyan: linear-gradient(to right, #22d3ee, #06b6d4, #0891b2);
+  --fu-grad-teal: linear-gradient(to right, #2dd4bf, #14b8a6, #0d9488);
+  --fu-grad-red: linear-gradient(to right, #f87171, #ef4444, #dc2626);
+  --fu-grad-pink: linear-gradient(to right, #f472b6, #ec4899, #db2777);
+  --fu-grad-purple: linear-gradient(to right, #a855f7, #9333ea, #7e22ce);
 }
 
 *,
@@ -91,48 +103,58 @@ h1 {
   line-height: 1.2;
 }
 
-h1,.h1 {
+h1,
+.h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
 
 @media (min-width: 1200px) {
-  h1,.h1 {
+  h1,
+  .h1 {
     font-size: 2.5rem;
   }
 }
 
-h2,.h2 {
+h2,
+.h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
-  h2,.h2 {
+  h2,
+  .h2 {
     font-size: 2rem;
   }
 }
 
-h3,.h3 {
+h3,
+.h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
-  h3,.h3 {
+  h3,
+  .h3 {
     font-size: 1.75rem;
   }
 }
 
-h4,.h4 {
+h4,
+.h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
-  h4,.h4 {
+  h4,
+  .h4 {
     font-size: 1.5rem;
   }
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.25rem;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1rem;
 }
 
@@ -220,26 +242,31 @@ select {
 [role="button"],
 button {
   cursor: pointer;
-  padding: 0.3rem 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 textarea {
   resize: vertical;
 }
 
+
+/* GUTTER */
 .g-0,
 .gx-0 {
-  padding:0 0;
+  padding: 0 0;
 }
 
 .g-0,
 .gy-0 {
-  padding:0 0;
+  padding: 0 0;
 }
 
 .g-1,
 .gx-1 {
-  padding:0 0.25rem;
+  padding: 0 0.25rem;
 }
 
 .g-1,
@@ -249,7 +276,7 @@ textarea {
 
 .g-2,
 .gx-2 {
-  padding:0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .g-2,
@@ -259,7 +286,7 @@ textarea {
 
 .g-3,
 .gx-3 {
-  padding:0 1rem;
+  padding: 0 1rem;
 }
 
 .g-3,
@@ -269,7 +296,7 @@ textarea {
 
 .g-4,
 .gx-4 {
-  padding:0 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .g-4,
@@ -279,7 +306,7 @@ textarea {
 
 .g-5,
 .gx-5 {
-  padding:0 2rem;
+  padding: 0 2rem;
 }
 
 .g-5,
@@ -289,7 +316,7 @@ textarea {
 
 .g-6,
 .gx-6 {
-  padding:0 3rem;
+  padding: 0 3rem;
 }
 
 .g-6,
@@ -297,6 +324,8 @@ textarea {
   padding: 3rem 0;
 }
 
+
+/* LIST STYLE */
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -323,12 +352,12 @@ textarea {
   text-align: center;
 }
 
+/* DISPLAY TEXT */
 .text-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
   line-height: 1.2;
 }
-
 
 .text-2 {
   font-size: calc(1.575rem + 3.9vw);
@@ -336,13 +365,11 @@ textarea {
   line-height: 1.2;
 }
 
-
 .text-3 {
   font-size: calc(1.525rem + 3.3vw);
   font-weight: 300;
   line-height: 1.2;
 }
-
 
 .text-4 {
   font-size: calc(1.475rem + 2.7vw);
@@ -350,13 +377,11 @@ textarea {
   line-height: 1.2;
 }
 
-
 .text-5 {
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 300;
   line-height: 1.2;
 }
-
 
 .text-6 {
   font-size: calc(1.375rem + 1.5vw);
@@ -364,20 +389,36 @@ textarea {
   line-height: 1.2;
 }
 
-.radius-s{
-    border-radius: 5px;
+/* BORDER RADIUS */
+.radius-s {
+  border-radius: 5px;
 }
 
-.radius-m{
-    border-radius: 8px;
+.radius-m {
+  border-radius: 8px;
 }
 
-.radius-l{
-    border-radius:16px;
+.radius-l {
+  border-radius: 16px;
 }
 
-.radius-full{
-    border-radius: 50%;
+.radius-full {
+  border-radius: 9999px;
 }
 
-
+/* FONT WEIGHT */
+.font-light {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
