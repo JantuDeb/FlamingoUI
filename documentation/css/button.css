@@ -1,4 +1,18 @@
 /* Default Button */
+
+.btn, a.btn{
+  padding: var(--fu-btn-padding);
+  background-color: var(--fu-primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: white;
+  background-color: var(--fu-blue-dark);
+}
+
 .btn-primary {
   background-color: var(--fu-primary);
   color: white;
