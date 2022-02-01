@@ -2,6 +2,7 @@
 @import url("./badge.css");
 @import url("./alert.css");
 @import url("./button.css");
+@import url("./card.css");
 
 :root {
   --fu-blue: #0d6efd;
