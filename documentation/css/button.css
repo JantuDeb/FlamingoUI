@@ -6,6 +6,7 @@
   color: white;
   border: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 .btn:hover{
@@ -29,7 +30,7 @@
   box-shadow: var(--fu-blue-light) 0px 0px 0px 3px;
 }
 
-.btn-secondary {
+.btn-secondary ,a.btn-secondary{
   background-color: white;
   color: var(--fu-primary);
   border: 1px solid var(--fu-primary);
@@ -46,7 +47,7 @@
   box-shadow: var(--fu-gray-400) 0px 0px 0px 3px;
 }
 
-.btn-green {
+.btn-green, a.btn-green {
   background-color: var(--fu-green);
   color: white;
 }
@@ -56,7 +57,7 @@
   box-shadow: var(--fu-green-light) 0px 0px 0px 3px;
 }
 
-.btn-red {
+.btn-red, a.btn-red {
   background-color: var(--fu-red);
   color: white;
 }
@@ -66,7 +67,7 @@
   box-shadow: var(--fu-red-light) 0px 0px 0px 3px;
 }
 
-.btn-purple {
+.btn-purple, a.btn-purple {
   background-color: var(--fu-purple);
   color: white;
 }

@@ -3,6 +3,7 @@
 @import url("./css/alert.css");
 @import url("./css/badge.css");
 @import url("./css/button.css");
+@import url("./css/card.css");
 *{
     margin: 0;
     padding: 0;
@@ -77,10 +78,22 @@ header{
 
 .language-html{
     max-height: 40vh;
+    /* display: inline-block; */
 }
+/* pre{
+    display: flex;
+    flex-direction: column;
+}
+pre code.language-html{
+    display: inline-block;
+}
+
+.html-code{
+    display: inline-block;
+} */
 /* AVATAR */
 
-.avatar-container, .badge-container, .button-container{
+.avatar-container, .badge-container, .button-container, .card-container{
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -93,4 +106,9 @@ header{
     display: inline-flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+/* CARD */
+.card-container{
+    justify-content: space-around;
 }

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9bd103101b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./../styles.css" />
+    <title>FlamingoUI</title>
+  </head>
+  <body>
+    <header>
+      <h1>FlamingoUI</h1>
+    </header>
+    <div class="container">
+      <aside class="sidebar">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><h6>GETTING STARTED</h6></li>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Quickstart</a></li>
+            <li><h6>COMPONENTS</h6></li>
+            <li><a href="./avatar.html">Avatar</a></li>
+            <li><a href="./alert.html">Alert</a></li>
+            <li><a href="./badge.html">Badge</a></li>
+            <li><a href="./button.html">Button</a></li>
+            <li><a href="./card.html">Card</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">Input</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="content-main gx-2">
+        <!-- Card -->
+        <p class="text-6">Card</p>
+        <div class="card-container gx-2 gy-2">
+          <div class="snippet">
+            <div class="card">
+              <img
+                src="../images/card-1.jpg"
+                class="card-img-top"
+                alt=""
+                srcset=""
+              />
+              <div class="card-body">
+                <h5>Noteworthy technology acquisitions 2021</h5>
+                <p>
+                  Here are the biggest enterprise technology acquisitions of 2021
+                  so far, in reverse chronological order.
+                </p>
+                <div class="card-action">
+                  <a href="#" class="radius-m btn"
+                    >Read More
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="html-code"></div>
+        </div>
+
+
+        <!-- Card With Dismiss -->
+        <p class="text-6">Card with dismiss</p>
+        <div class="card-container gx-2 gy-2">
+         <div class="snippet">
+          <div class="card card-dismiss radius-m">
+            <i class="fas fa-times card-icon-dismiss"></i>
+            <div class="card-body">
+              <h5 class="text-center">Manage Cookie Consent</h5>
+              <p class="text-center">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <div class="card-action">
+                <button class="radius-m btn-primary">Accept</button>
+                <button class="radius-m btn-secondary">Ignore</button>
+              </div>
+            </div>
+          </div>
+         </div>
+          <div class="html-code"></div>
+        </div>
+        
+
+        <!-- Card With Overlay -->
+        <p class="text-6">Card with overlay</p>
+        <div class="card-container gx-2 -gy-2">
+         <div class="snippet">
+          <div class="card radius-m">
+            <div class="card-overlay">
+              <img
+                src="../images/card-1.jpg"
+                class="card-img-top radius-m"
+                alt=""
+                srcset=""
+              />
+              <h5 class="overlay-text">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </div>
+            <div class="card-body">
+              <p>
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+            </div>
+          </div>
+         </div>
+          <div class="html-code"></div>
+        </div>
+
+        <!-- Text Only Card -->
+        <p class="text-6">Text only Card</p>
+        <div class="card-container gx-2 gy-2">
+          <div class="snippet">
+            <div class="card radius-m g-4">
+              <div class="card-body">
+                <h5>Manage Cookie Consent</h5>
+                <p>
+                  Here are the biggest enterprise technology acquisitions of 2021
+                  so far, in reverse chronological order.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="html-code"></div>
+        </div>
+
+        <!-- CARD horizontal -->
+         <!-- Card -->
+         <p class="text-6">Card horizontal </p>
+         <div class="card-container gx-2 gy-2">
+           <div class="snippet">
+            <div class="card card-horizontal">
+              <img
+                src="../images/git-hub-500x600.jpg"
+                class="card-img-right"
+                alt=""
+                srcset=""
+              />
+              <div class="card-body">
+                <h5>Noteworthy technology acquisitions 2021</h5>
+                <p>
+                  Here are the biggest enterprise technology acquisitions of 2021
+                  so far, in reverse chronological order.
+                </p>
+                <div class="card-action">
+                  <a href="#" class="radius-m btn btn-secondary"
+                    >Add to Cart
+                   </a>
+                  <a href="#" class="radius-m btn"
+                    >Buy Now
+                    </a>
+                </div>
+              </div>
+            </div>
+           </div>
+           <div class="html-code"></div>
+         </div>
+      </main>
+    </div>
+
+    <!-- script -->
+    <script src="./../index.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
