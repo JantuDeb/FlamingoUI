@@ -284,22 +284,24 @@ textarea {
   padding: 0.5rem 0;
 }
 
-.g-3,
+.g-3{
+  padding: 1 rem;
+}
 .gx-3 {
-  padding: 0 1rem;
+padding: 0 1rem;
 }
 
-.g-3,
 .gy-3 {
   padding: 1rem 0;
 }
 
-.g-4,
+.g-4{
+padding: 1rem;
+}
 .gx-4 {
-  padding: 0 1.5rem;
+padding: 0 1rem;
 }
 
-.g-4,
 .gy-4 {
   padding: 1.5rem 0;
 }
