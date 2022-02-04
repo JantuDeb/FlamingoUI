@@ -1,0 +1,124 @@
+/* Default Input */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input,
+.text-area {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--fu-gray-400);
+  border-radius: 0.25rem;
+}
+
+.input:focus,
+.text-area:focus {
+  outline: 3px solid var(--fu-blue-light);
+  color: var(--fu-gray-900);
+  border: 1px solid transparent;
+}
+
+.error {
+  border: 1px solid var(--fu-danger);
+}
+
+.error:focus {
+  outline: 3px solid var(--fu-blue-light);
+  border: 1px solid transparent;
+}
+
+
+
+/* INPUT WITH */
+.input-icon {
+  padding: 0.2rem 0.5rem;
+  border: 2px solid var(--fu-gray-400);
+  border-radius: 0.25rem;
+}
+
+.input-icon input {
+  border: none;
+}
+
+.input-icon i {
+  color: var(--fu-gray-600);
+}
+
+.input-icon input:focus {
+  outline: 2px transparent solid;
+}
+
+.input-icon:focus-within {
+  outline: 2px transparent solid;
+  border: 2px solid var(--fu-blue-light);
+}
+
+/* ACTION INPUT */
+.input-action {
+  display: flex;
+  height: 2rem;
+}
+
+.input-action input {
+  border-radius: 0;
+  outline: 2px solid var(--fu-gray-400);
+  border: none;
+}
+
+.input-action input:focus {
+  outline: 2px solid var(--fu-blue-light);
+  border: none;
+}
+
+.input-action span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--fu-gray-300);
+  padding: 0 0.5rem;
+  height: 100%;
+  outline: 2px solid var(--fu-gray-400);
+  color: var(--fu-gray-600);
+}
+
+/* FLOATED INPUT */
+
+.floated{
+  position: relative;
+  color: var(--fu-gray-600);
+}
+
+.input-floated{
+  padding: 0.2rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--fu-gray-400);
+  z-index: 2;
+  background-color: transparent;
+}
+
+.input-floated:focus{
+  border-bottom: 1px solid var(--fu-primary);
+  outline: 1px solid transparent;
+}
+
+.label-floated{
+  position: absolute;
+  top:0.25rem;
+  transition: 0.2s ease-in;
+  
+}
+.input-floated::placeholder{
+color: transparent;
+}
+
+
+.input-floated:focus + .label-floated{
+  top: -0.8rem;
+  font-size: 0.8rem;
+}
+
+.input-floated:not(:placeholder-shown) +.label-floated {
+  top: -0.8rem;
+  font-size: 0.8rem;
+}

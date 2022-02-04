@@ -4,6 +4,7 @@
 @import url("./css/badge.css");
 @import url("./css/button.css");
 @import url("./css/card.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,6 @@
 
 body {
   overflow: hidden;
-  font-family: var(--fu-font-sans-serif);
   background-color: var(--fu-body-bg);
   color: var(--fu-body-color);
 }
@@ -39,8 +39,6 @@ header {
   overflow-y: auto;
   height: 88vh;
   max-width: 85vw;
-padding: 2rem;
-
 }
 
 .nav {
@@ -60,22 +58,22 @@ padding: 2rem;
 
 .nav-list li a {
   text-decoration: none;
-  color: #4b5563;
+  color: var(--fu-gray-800);
 }
 
 .nav-list li a:hover {
-  color: #1c64f2;
+  color: var(--fu-primary);
+  border-bottom: 2px solid var(--fu-primary);
 }
 
 .btn-copy {
   background-color: transparent;
-  border-top: 2px solid var(--fu-orange);
-  border-left: 2px solid var(--fu-orange);
-  border-right: 2px solid var(--fu-orange);
+  border: 2px solid var(--fu-orange);
+  border-bottom: 0;
   padding: 0.5rem;
   color: var(--fu-primary);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .language-html {
@@ -87,7 +85,8 @@ padding: 2rem;
 .avatar-container,
 .badge-container,
 .button-container,
-.card-container {
+.card-container,
+.input-container {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -107,13 +106,7 @@ padding: 2rem;
   justify-content: space-around;
 }
 
-.image-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.inline-code{
-    color: var(--fu-danger);
+/* INPUT */
+.input-container {
+  align-items: flex-start;
 }
