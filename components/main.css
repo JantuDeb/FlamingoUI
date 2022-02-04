@@ -399,11 +399,11 @@ padding: 0 1rem;
 }
 
 .radius-md {
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .radius-lg {
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 .radius-full {
