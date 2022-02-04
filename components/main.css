@@ -3,7 +3,10 @@
 @import url("./alert.css");
 @import url("./button.css");
 @import url("./card.css");
+@import url("./image.css");
+@import url("./input.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   --fu-blue: #0d6efd;
   --fu-blue-light: #c3ddfd;
@@ -44,18 +47,14 @@
   --fu-danger: #dc3545;
   --fu-light: #f8f9fa;
   --fu-dark: #212529;
-  --fu-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fu-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --fu-font-popins: 'Popins', sans-serif;
   --fu-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
 
-  --fu-body-font-family: var(--fu-font-sans-serif);
+  --fu-body-font-family: var(--fu-font-popins);
   --fu-body-font-size: 1rem;
   --fu-body-font-weight: 400;
   --fu-body-line-height: 1.5;
@@ -201,12 +200,6 @@ a:hover {
   color: #0a58ca;
 }
 
-pre,
-code {
-  font-family: var(--bs-font-monospace);
-  font-size: 1em;
-}
-
 pre {
   display: block;
   margin-top: 0;
@@ -232,6 +225,9 @@ button,
 select,
 optgroup,
 textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
   margin: 0;
 }
 
@@ -425,3 +421,22 @@ padding: 0 1rem;
 .font-bold {
   font-weight: 700;
 }
+
+
+/* TEXT COLOR*/
+
+.text-danger{
+  color: var(--fu-danger);
+}
+
+.text-success{
+  color: var(--fu-success);
+}
+
+.text-warning{
+  color: var(--fu-warning);
+}
+.text-primary{
+  color: var(--fu-primary);
+}
+

@@ -4,111 +4,109 @@
 @import url("./css/badge.css");
 @import url("./css/button.css");
 @import url("./css/card.css");
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    overflow:hidden;
-    font-family: var(--fu-font-sans-serif);
-    background-color: var(--fu-body-bg);
-    color: var(--fu-body-color);
+body {
+  overflow: hidden;
+  background-color: var(--fu-body-bg);
+  color: var(--fu-body-color);
 }
-header{
-    background: var(--fu-grad-blue);
-    padding: 0.5rem;
-    color: white;
-}
-
-.container{
-    display: flex;
-    overflow:hidden;
+header {
+  background: var(--fu-grad-blue);
+  padding: 0.5rem;
+  color: white;
 }
 
-
-.sidebar{
-    width: 250px;
-    background-color: var(--fu-blue-lighter);
-    padding-left: 1rem;
+.container {
+  display: flex;
+  overflow: hidden;
 }
 
-.content-main{
-    flex-grow: 1;
-    overflow-y: auto;
-    height: 88vh;
-    max-width: 85vw;
+.sidebar {
+  flex-basis: 250px;
+  flex-shrink: 0;
+  background-color: var(--fu-blue-lighter);
+  padding-left: 1rem;
 }
 
-.nav{
-    overflow: auto;
+.content-main {
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 88vh;
+  max-width: 85vw;
 }
 
-.nav-list{
-    text-decoration: none;
-    padding: 0.5rem;
-    overflow: auto;
-    height: 100vh;
+.nav {
+  overflow: auto;
 }
 
-.nav-list li{
-    height: 2rem;
+.nav-list {
+  text-decoration: none;
+  padding: 0.5rem;
+  overflow: auto;
+  height: 100vh;
 }
 
-.nav-list li a{
-    text-decoration: none;
-    color: #4B5563;
+.nav-list li {
+  height: 2rem;
 }
 
-.nav-list li a:hover{
-    color: #1C64F2;
+.nav-list li a {
+  text-decoration: none;
+  color: var(--fu-gray-800);
 }
 
-.btn-copy{
-    background-color: transparent;
-    border-top:2px solid var(--fu-orange);
-    border-left:2px solid var(--fu-orange);
-    border-right:2px solid var(--fu-orange);
-    padding: 0.5rem;
-    color: var(--fu-primary);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.nav-list li a:hover {
+  color: var(--fu-primary);
+  border-bottom: 2px solid var(--fu-primary);
 }
 
-.language-html{
-    max-height: 40vh;
-    /* display: inline-block; */
-}
-/* pre{
-    display: flex;
-    flex-direction: column;
-}
-pre code.language-html{
-    display: inline-block;
+.btn-copy {
+  background-color: transparent;
+  border: 2px solid var(--fu-orange);
+  border-bottom: 0;
+  padding: 0.5rem;
+  color: var(--fu-primary);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
-.html-code{
-    display: inline-block;
-} */
+.language-html {
+  max-height: 40vh;
+}
+
 /* AVATAR */
 
-.avatar-container, .badge-container, .button-container, .card-container{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    flex-wrap: wrap;
+.avatar-container,
+.badge-container,
+.button-container,
+.card-container,
+.input-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* ALERT */
 
-.alert-container{
-    display: inline-flex;
-    flex-direction: column;
-    gap: 1rem;
+.alert-container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /* CARD */
-.card-container{
-    justify-content: space-around;
+.card-container {
+  justify-content: space-around;
+}
+
+/* INPUT */
+.input-container {
+  align-items: flex-start;
 }
