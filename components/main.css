@@ -6,6 +6,7 @@
 @import url("./image.css");
 @import url("./input.css");
 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   --fu-blue: #0d6efd;
@@ -389,16 +390,16 @@ padding: 0 1rem;
 }
 
 /* BORDER RADIUS */
-.radius-s {
+.radius-sm {
   border-radius: 5px;
 }
 
-.radius-m {
-  border-radius: 8px;
+.radius-md {
+  border-radius: 0.5rem;
 }
 
-.radius-l {
-  border-radius: 16px;
+.radius-lg {
+  border-radius: 1rem;
 }
 
 .radius-full {
