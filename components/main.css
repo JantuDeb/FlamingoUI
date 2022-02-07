@@ -6,7 +6,9 @@
 @import url("./image.css");
 @import url("./input.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 :root {
   --fu-blue: #0d6efd;
   --fu-blue-light: #c3ddfd;
@@ -47,14 +49,14 @@
   --fu-danger: #dc3545;
   --fu-light: #f8f9fa;
   --fu-dark: #212529;
-  --fu-font-popins: 'Popins', sans-serif;
+  --fu-font-popins: "Popins", sans-serif;
   --fu-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
 
-  --fu-body-font-family: var(--fu-font-popins);
+  --fu-body-font-family: 'Roboto', sans-serif;
   --fu-body-font-size: 1rem;
   --fu-body-font-weight: 400;
   --fu-body-line-height: 1.5;
@@ -249,80 +251,156 @@ textarea {
   resize: vertical;
 }
 
-
-/* GUTTER */
-.g-0,
-.gx-0 {
-  padding: 0 0;
+/* GUTTER PADDING*/
+.p-1 {
+  padding: 0.25rem;
+}
+.px-1 {
+  padding-left:  0.25rem;
+  padding-right:  0.25rem;
+}
+.py-1 {
+  padding-top:  0.25rem;
+  padding-bottom:  0.25rem;
 }
 
-.g-0,
-.gy-0 {
-  padding: 0 0;
+.p-2 {
+  padding: 0.5rem;
+}
+.px-2 {
+  padding-left:  0.5rem;
+  padding-right:  0.5rem;
+}
+.py-2 {
+  padding-top:  0.5rem;
+  padding-bottom:  0.5rem;
 }
 
-.g-1,
-.gx-1 {
-  padding: 0 0.25rem;
-}
-
-.g-1,
-.gy-1 {
-  padding: 0.25rem 0;
-}
-
-.g-2,
-.gx-2 {
-  padding: 0 0.5rem;
-}
-
-.g-2,
-.gy-2 {
-  padding: 0.5rem 0;
-}
-
-.g-3{
+.p-3 {
   padding: 1 rem;
 }
-.gx-3 {
-padding: 0 1rem;
+.px-3 {
+  padding-left:  1rem;
+  padding-right:  1rem;
 }
 
-.gy-3 {
-  padding: 1rem 0;
+.py-3 {
+  padding-top:  1rem;
+  padding-bottom:  1rem;
 }
 
-.g-4{
-padding: 1rem;
+.p-4 {
+  padding: 1.5rem;
 }
-.gx-4 {
-padding: 0 1rem;
-}
-
-.gy-4 {
-  padding: 1.5rem 0;
+.px-4 {
+  padding-left:  1.5rem;
+  padding-right:  1.5rem;
 }
 
-.g-5,
-.gx-5 {
-  padding: 0 2rem;
+.py-4 {
+  padding-top:  1.5rem;
+  padding-bottom:  1.5rem;
 }
 
-.g-5,
-.gy-5 {
-  padding: 2rem 0;
+.p-5 {
+  padding: 2rem;
+}
+.px-5 {
+  padding-left: 2rem;
+  padding-right:  2rem;
+}
+.py-5 {
+  padding-top:  2rem;
+  padding-bottom: 2rem;
 }
 
-.g-6,
-.gx-6 {
-  padding: 0 3rem;
+.p-6 {
+  padding: 3rem;
+}
+.px-6 {
+  padding-left:  3rem;
+  padding-right:  3rem;
+}
+.py-6 {
+  padding-top: 3rem;
+  padding-bottom:  3rem;
 }
 
-.g-6,
-.gy-6 {
-  padding: 3rem 0;
+/* GUTTER MARGIN */
+.m-1 {
+  margin: 0.25rem;
+}
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.m-3 {
+  margin: 1rem;
+}
+
+.mx-3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.m-4 {
+  margin: 1.5rem;
+}
+.mx-4 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.m-5 {
+  margin: 2rem;
+}
+.mx-5 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.my-5 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.m-6 {
+  margin: 3rem;
+}
+.mx-6 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.my-6 {
+  margin-top:3rem;
+  margin-bottom: 3rem;
+}
 
 /* LIST STYLE */
 .list-unstyled {
@@ -389,16 +467,16 @@ padding: 0 1rem;
 }
 
 /* BORDER RADIUS */
-.radius-s {
+.radius-sm {
   border-radius: 5px;
 }
 
-.radius-m {
-  border-radius: 8px;
+.radius-md {
+  border-radius: 0.5rem;
 }
 
-.radius-l {
-  border-radius: 16px;
+.radius-lg {
+  border-radius: 1rem;
 }
 
 .radius-full {
@@ -422,21 +500,37 @@ padding: 0 1rem;
   font-weight: 700;
 }
 
-
 /* TEXT COLOR*/
 
-.text-danger{
+.text-danger {
   color: var(--fu-danger);
 }
 
-.text-success{
+.text-success {
   color: var(--fu-success);
 }
 
-.text-warning{
+.text-warning {
   color: var(--fu-warning);
 }
-.text-primary{
+.text-primary {
   color: var(--fu-primary);
 }
 
+/* FLEX  */
+.flex{
+  display: flex;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
