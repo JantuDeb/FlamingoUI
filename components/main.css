@@ -6,6 +6,7 @@
 @import url("./image.css");
 @import url("./input.css");
 @import url('./list.css');
+@import url("./text-utils.css");
 
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
@@ -171,18 +172,6 @@ ol,
 ul {
   padding-left: 1rem;
 }
-
-/* ol,
-ul {
-  margin-top: 0;
-} */
-
-/* ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-bottom: 0;
-} */
 
 b,
 strong {
