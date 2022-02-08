@@ -1,0 +1,39 @@
+/* basic list */
+.list-item{
+    padding: var(--fu-default-padding);
+    border: var(--fu-gray-300) solid 1px;
+    margin-bottom: -1px;
+    background-color: #fff;
+}
+
+.list-item:first-child{
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.list-item:last-child{
+    margin-bottom: 0;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.list-item.active{
+    background-color: var(--fu-primary);
+    color: #fff;
+}
+
+.list-item a{
+    color: inherit;
+}
+.list-item a:hover{
+    color: inherit;
+}
+
+
+.list-item.active a{
+    color: #fff;
+}
+
+.list-item:not(.active):hover{
+    background-color: var(--fu-gray-100);
+}

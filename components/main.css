@@ -5,6 +5,7 @@
 @import url("./card.css");
 @import url("./image.css");
 @import url("./input.css");
+@import url('./list.css');
 @import url("./text-utils.css");
 
 /* FONT */
@@ -65,6 +66,7 @@
   --fu-body-bg: #fff;
 
   --fu-btn-padding: 0.6rem 1rem;
+  --fu-default-padding: 0.5rem;
   --fu-shadow-gray: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
   /* Gradient */
@@ -102,21 +104,7 @@ p {
 
 ol,
 ul {
-  padding-left: 2rem;
-}
-
-ol,
-ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-bottom: 0;
+  padding-left: 1rem;
 }
 
 b,
@@ -334,8 +322,8 @@ textarea {
 
 /* LIST STYLE */
 .list-unstyled {
-  padding-left: 0;
   list-style: none;
+  padding-left: 0;
 }
 
 .list-inline {
@@ -417,6 +405,14 @@ textarea {
   justify-content: center;
 }
 
+.between{
+  justify-content: space-between;
+}
 .wrap{
   flex-wrap: wrap;
 }
+
+.block{
+  display: block;
+}
+
