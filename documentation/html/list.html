@@ -1,52 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/9bd103101b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./../styles.css" />
-    <title>FlamingoUI</title>
-  </head>
-  <body>
-    <header>
-      <h1>FlamingoUI</h1>
-    </header>
-    <div class="container">
-      <aside class="sidebar">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><h6>GETTING STARTED</h6></li>
-            <li><a href="#">Introduction</a></li>
-            <li><a href="#">Quickstart</a></li>
-            <li><h6>COMPONENTS</h6></li>
-            <li><a href="./avatar.html">Avatar</a></li>
-            <li><a href="./alert.html">Alert</a></li>
-            <li><a href="./badge.html">Badge</a></li>
-            <li><a href="./button.html">Button</a></li>
-            <li><a href="./card.html">Card</a></li>
-            <li><a href="./image.html">Image</a></li>
-            <li><a href="./input.html">Input</a></li>
-            <li><a href="./text-utils.html">Input</a></li>
-            <li><a href="./list.html">Input</a></li>
-          </ul>
-        </nav>
-      </aside>
-      <main class="content-main p-4"> </main>
-    </div>
 
-    <!-- script -->
-    <script src="./../index.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css" />
+  <script src="https://kit.fontawesome.com/9bd103101b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./../styles.css" />
+  <title>FlamingoUI</title>
+</head>
+
+<body>
+  <header>
+    <h1>FlamingoUI</h1>
+  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <h6>GETTING STARTED</h6>
+          </li>
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Quickstart</a></li>
+          <li>
+            <h6>COMPONENTS</h6>
+          </li>
+          <li><a href="./avatar.html">Avatar</a></li>
+          <li><a href="./alert.html">Alert</a></li>
+          <li><a href="./badge.html">Badge</a></li>
+          <li><a href="./button.html">Button</a></li>
+          <li><a href="./card.html">Card</a></li>
+          <li><a href="./image.html">Image</a></li>
+          <li><a href="./input.html">Input</a></li>
+          <li><a href="./text-utils.html">Text Utilities</a></li>
+          <li><a href="./list.html">List</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content-main p-4">
+      <p class="text-6">List</p>
+      <p>
+        The list component can be used to display a series of elements,
+        buttons or links inside a single card component similar to a sidebar
+      </p>
+
+      <p class="text-6">Basic List</p>
+      <div class="list-container snippet">
+        <ul class="list list-unstyled">
+          <li class="list-item"><a href="#">Gaining Access</a></li>
+          <li class="list-item">Inviting Friends</li>
+          <li class="list-item">Benefits</li>
+          <li class="list-item"><a href="#">Link to somewhere</a></li>
+          <li class="list-item">Rebates</li>
+          <li class="list-item">Discounts</li>
+          <li class="list-item">Warranty</li>
+        </ul>
+      </div>
+      <div class="html-code py-4"></div>
+
+      <p class="text-6">Basic list with active item</p>
+      <div class="list-container snippet">
+        <ul class="list list-unstyled">
+          <li class="list-item">Signing Up</li>
+          <li class="list-item">User Benefits</li>
+          <li class="list-item active">Power User</li>
+          <li class="list-item">Regular User</li>
+          <li class="list-item">Deleting Your Account</li>
+          <li class="list-item">Admin</li>
+        </ul>
+      </div>
+      <div class="html-code py-4"></div>
+
+      <p class="text-6">List with Links</p>
+      <div class="list-container snippet">
+        <ul class="list list-unstyled">
+          <li class="list-item"><a href="#" class="block">Signing Up</a></li>
+          <li class="list-item">
+            <a href="#" class="block">User Benefits</a>
+          </li>
+          <li class="list-item active">
+            <a href="#" class="block">Power User</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="block">Regular User</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="block">Deleting Your Account</a>
+          </li>
+          <li class="list-item"><a href="#" class="block">Admin</a></li>
+        </ul>
+      </div>
+      <div class="html-code py-4"></div>
+
+      <p class="text-6">Notification List</p>
+      <div class="list-container snippet">
+        <ul class="list list-unstyled">
+          <li class="list-item active">
+            <a href="#" class="block">
+              <div class="flex between">
+                <h5>List item heading</h5>
+                <small>2 hours ago</small>
+              </div>
+              <p class="my-1">
+                Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                diam eget risus varius blandit.
+              </p>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="block">
+              <div class="flex between">
+                <h5>List item heading</h5>
+                <small>2 days ago</small>
+              </div>
+              <p class="my-1">
+                Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                diam eget risus varius blandit.
+              </p>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="block">
+              <div class="flex between">
+                <h5>List group item heading</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="my-1">
+                Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                diam eget risus varius blandit.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="html-code py-4"></div>
+    </main>
+  </div>
+
+  <!-- script -->
+  <script src="./../index.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+
 </html>
