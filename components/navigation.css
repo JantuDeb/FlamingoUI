@@ -1,0 +1,87 @@
+/* Navbar */
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+.nav-logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.brand-name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.nav-list {
+  list-style: none;
+  margin-bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list-item {
+  padding: 0.5rem 1rem;
+}
+
+/* MOBILE MENU */
+.visibility {
+  display: none;
+}
+.mobile .nav-list-item {
+  border-bottom: 1px solid var(--fu-blue-dark);
+}
+.mobile .nav-list-item:hover {
+  background-color: var(--fu-blue-dark);
+}
+
+.nav-list-item a{
+padding: 0.25rem 0;
+} 
+
+.menu-icon {
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  background-color: var(--fu-blue-dark);
+}
+.menu-icon:focus {
+  outline: var(--fu-blue-dark) solid 2px;
+}
+
+@media (min-width: 825px) {
+  .nav-list {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+/* NAVbar with search input */
+.wish-list .badge-icon-count,
+.cart .badge-icon-count {
+  background-color: var(--fu-red);
+  color: #fff;
+}
+
+.nav-link:hover {
+  border-bottom: 2.5px solid var(--fu-red);
+}

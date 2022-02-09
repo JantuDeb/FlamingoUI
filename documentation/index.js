@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
   for (let index = 0; index < list.length; index++) {
     let element = list[index];
     let snippet = element.innerHTML.replace(/</g, "&lt;");
-    // snippet = snippet.replace(/        /g, "");
+    snippet = snippet.replace(/        /g, "");
     let pre = document.createElement("pre");
     // pre.style = "padding:0.5rem ; margin:0.5rem;";
    
