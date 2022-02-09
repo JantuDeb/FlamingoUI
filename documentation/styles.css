@@ -102,3 +102,8 @@ header {
 .input-container {
   align-items: flex-start;
 }
+
+/* LIST */
+.list-container .list{
+  max-width: 480px;
+}
