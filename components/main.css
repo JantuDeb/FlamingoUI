@@ -9,6 +9,7 @@
 @import url('./list.css');
 @import url("./text-utils.css");
 @import url("./modal.css");
+@import url("./toast.css");
 
 /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
@@ -438,6 +439,9 @@ textarea {
   background: var(--fu-grad-blue);
 }
 
+.bg-green-light{
+  background-color: var(--fu-green-light);
+}
 /* COLOR */
 .text-blue {
   background-color: var(--fu-blue);
@@ -457,6 +461,10 @@ textarea {
 
 .shadow-gray {
   box-shadow: var(--fu-shadow-gray);
+}
+
+.text-green{
+  color: var(--fu-green);
 }
 
 .between{

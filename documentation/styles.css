@@ -37,7 +37,6 @@ header {
   max-width: 85vw;
 }
 
-
 .sidebar-list li {
   height: 2rem;
 }
@@ -72,7 +71,8 @@ header {
 .badge-container,
 .button-container,
 .card-container,
-.input-container {
+.input-container,
+.toast-container {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -98,12 +98,12 @@ header {
 }
 
 /* LIST */
-.list-container .list{
+.list-container .list {
   max-width: 480px;
 }
 
 /* Modal */
-.modal-container{
+.modal-container {
   height: 30vh;
   position: relative;
 }
