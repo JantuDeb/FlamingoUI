@@ -1,0 +1,40 @@
+.toast-success-check {
+  padding: 0.5rem;
+  background-color: var(--fu-green-light);
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn-toast-close {
+  padding: 0;
+  padding-right: 0.5rem;
+  background-color: transparent;
+}
+
+.toast-danger-check {
+  padding: 0.5rem;
+  background-color: var(--fu-red-light);
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Snackbar */
+.snackbar {
+  position: absolute;
+  background-color: var(--fu-dark);
+  color: #fff;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  bottom: 1rem;
+}
+
+.btn-retry{
+    background-color: transparent;
+    color: var(--fu-primary);
+}
+
+.snackbar-close{
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.rating{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--fu-shadow-gray);
+    padding: 0.5rem;
+}
+
+.rating-star{
+    color: var(--fu-gray-300);
+}
+
+.rating-right-container{
+    padding-left: 2rem ;
+    margin-left: 2rem;
+    border-left: 2px solid var(--fu-gray-200);
+}

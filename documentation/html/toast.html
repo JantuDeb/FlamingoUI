@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9bd103101b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./../styles.css" />
+    <title>FlamingoUI</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>FlamingoUI</h1>
+    </header>
+    <div class="container">
+      <aside class="sidebar p-4">
+        <ul class="sidebar-list list-unstyled">
+          <li>
+            <h6>GETTING STARTED</h6>
+          </li>
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Quickstart</a></li>
+          <li>
+            <h6>COMPONENTS</h6>
+          </li>
+          <li><a href="./avatar.html">Avatar</a></li>
+          <li><a href="./alert.html">Alert</a></li>
+          <li><a href="./badge.html">Badge</a></li>
+          <li><a href="./button.html">Button</a></li>
+          <li><a href="./card.html">Card</a></li>
+          <li><a href="./image.html">Image</a></li>
+          <li><a href="./input.html">Input</a></li>
+          <li><a href="./text-utils.html">Text Utilities</a></li>
+          <li><a href="./list.html">List</a></li>
+          <li><a href="./navigation.html">Navigation</a></li>
+          <li><a href="./modal.html">Modal</a></li>
+          <li><a href="./toast.html">Toast</a></li>
+        </ul>
+      </aside>
+      <main class="content-main p-4">
+        <p class="text-6">Toast</p>
+        <p>
+          The modal component can be used as an interactive dialog on top of the
+          main content area of the website to show notifications and gather
+          information using form elements from your website users.
+        </p>
+
+        <p class="text-6">Default toast</p>
+        <div class="toast-container snippet center">
+          <div class="shadow-gray flex center p-2 radius-md" role="alert">
+            <span class="toast-success-check flex center radius-md">
+              <i class="fas fa-check text-green"></i>
+            </span>
+            <div class="mx-2">Item added successfully.</div>
+            <button type="button" class="btn-toast-close" aria-label="Close">
+              <span class="sr-only">Close</span>
+              <i class="fas fa-times text-gray"></i>
+            </button>
+          </div>
+          <div class="shadow-gray flex center p-2 radius-md" role="alert">
+            <span class="toast-danger-check flex center radius-md">
+              <i class="fas fa-check text-red"></i>
+            </span>
+            <div class="mx-2">Item moved successfully.</div>
+            <button type="button" class="btn-toast-close" aria-label="Close">
+              <span class="sr-only">Close</span>
+              <i class="fas fa-times text-gray"></i>
+            </button>
+          </div>
+        </div>
+        <div class="html-code py-4"></div>
+
+        <p class="text-6">Snackbar</p>
+        <div class="flex center">
+          <button class="btn-primary m-2 radius-md" id="btn-baseline">
+            BASELINE
+          </button>
+          <button class="btn-primary m-2 radius-md" id="btn-leading">
+            LEADING
+          </button>
+          <button class="btn-primary m-2 radius-md" id="btn-stacked">
+            STACKED
+          </button>
+        </div>
+
+        <div class="snack-bar-container snippet">
+          <!-- BASELINE -->
+          <div class="snackbar visibility" id="baseline">
+            <div class="flex center">
+              <div>Can't send photo. Retry in 5 seconds.</div>
+              <button class="btn-retry">RETRY</button>
+              <i class="fas fa-times snackbar-close"></i>
+            </div>
+          </div>
+
+          <!-- LEADING -->
+          <div class="snackbar visibility" id="leading">
+            <div class="flex center">
+              <span>Can't send photo. Retry in 5 seconds.</span>
+              <button class="btn-retry">UNDO</button>
+              <i class="fas fa-times snackbar-close"></i>
+            </div>
+          </div>
+          <!-- STACKED -->
+          <div class="snackbar visibility" id="stacked">
+            <div class="flex center">
+              <span>
+                This item already has the label "travel". You can add a new
+                label.
+              </span>
+              <button class="btn-retry">ADD A NEW LABEL</button>
+              <i class="fas fa-times snackbar-close"></i>
+            </div>
+          </div>
+        </div>
+        <div class="html-code py-4"></div>
+      </main>
+    </div>
+
+    <!-- script -->
+    <script src="./../../components/navigation.js"></script>
+    <script src="./../index.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
