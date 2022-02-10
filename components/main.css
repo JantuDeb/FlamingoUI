@@ -8,6 +8,7 @@
 @import url("./navigation.css");
 @import url('./list.css');
 @import url("./text-utils.css");
+@import url("./modal.css");
 
 /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
@@ -457,7 +458,7 @@ textarea {
 .shadow-gray {
   box-shadow: var(--fu-shadow-gray);
 }
-=======
+
 .between{
   justify-content: space-between;
 }
@@ -467,4 +468,8 @@ textarea {
 
 .block{
   display: block;
+}
+
+.border-b{
+  border-bottom: solid 1px var(--fu-dark);
 }

@@ -101,3 +101,9 @@ header {
 .list-container .list{
   max-width: 480px;
 }
+
+/* Modal */
+.modal-container{
+  height: 30vh;
+  position: relative;
+}
