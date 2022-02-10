@@ -32,6 +32,8 @@ header {
   flex-shrink: 0;
   background-color: var(--fu-blue-lighter);
   padding-left: 1rem;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .content-main {
@@ -41,27 +43,17 @@ header {
   max-width: 85vw;
 }
 
-.nav {
-  overflow: auto;
-}
 
-.nav-list {
-  text-decoration: none;
-  padding: 0.5rem;
-  overflow: auto;
-  height: 100vh;
-}
-
-.nav-list li {
+.sidebar-list li {
   height: 2rem;
 }
 
-.nav-list li a {
+.sidebar-list li a {
   text-decoration: none;
   color: var(--fu-gray-800);
 }
 
-.nav-list li a:hover {
+.sidebar-list li a:hover {
   color: var(--fu-primary);
   border-bottom: 2px solid var(--fu-primary);
 }
