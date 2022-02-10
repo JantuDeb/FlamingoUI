@@ -1,0 +1,27 @@
+/* grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.grid-item {
+  background: var(--fu-grad-blue);
+  min-height: 300px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+
+@media (min-width: 825px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);;
+  }
+}
