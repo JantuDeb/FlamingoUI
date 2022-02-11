@@ -1,9 +1,4 @@
 @import url(./../components/main.css);
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   overflow: hidden;
@@ -27,7 +22,7 @@ header {
   background-color: var(--fu-blue-lighter);
   padding-left: 1rem;
   overflow-y: auto;
-  height: 100vh;
+  height: 95vh;
 }
 
 .content-main {
@@ -63,6 +58,12 @@ header {
 
 .language-html {
   max-height: 40vh;
+}
+
+.inline-code{
+  color:var(--fu-red);
+  background-color: var(--fu-gray-300);
+  padding: 0 0.2rem;
 }
 
 /* AVATAR */

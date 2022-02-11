@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./documentation/styles.css" />
     <title>FlamingoUI</title>
   </head>
+
   <body>
     <header>
       <h1>FlamingoUI</h1>
@@ -25,11 +26,9 @@
           <li>
             <h6>GETTING STARTED</h6>
           </li>
-          <li><a href="#">Introduction</a></li>
-          <li><a href="#">Quickstart</a></li>
-          <li>
-            <h6>COMPONENTS</h6>
-          </li>
+          <li><a href="./index.html">Introduction</a></li>
+          <!-- <li><a href="#">Quickstart</a></li> -->
+          <li><h6>COMPONENTS</h6></li>
           <li><a href="./documentation/html/avatar.html">Avatar</a></li>
           <li><a href="./documentation/html/alert.html">Alert</a></li>
           <li><a href="./documentation/html/badge.html">Badge</a></li>
@@ -37,19 +36,63 @@
           <li><a href="./documentation/html/card.html">Card</a></li>
           <li><a href="./documentation/html/image.html">Image</a></li>
           <li><a href="./documentation/html/input.html">Input</a></li>
-          <li><a href="./documentation/html/text-utils.html">Text Utilities</a></li>
+          <li>
+            <a href="./documentation/html/text-utils.html">Text Utilities</a>
+          </li>
           <li><a href="./documentation/html/list.html">List</a></li>
           <li><a href="./documentation/html/navigation.html">Navigation</a></li>
           <li><a href="./documentation/html/modal.html">Modal</a></li>
+          <li>
+            <a href="./documentation/html/toast.html">Toast & Snackbar</a>
+          </li>
+          <li><a href="./documentation/html/rating.html">Rating</a></li>
+          <li><a href="./documentation/html/grid.html">Grid</a></li>
         </ul>
       </aside>
       <main class="content-main p-4">
+        <p class="text-6">Introduction</p>
+        <p>
+          Get started with <span class="text-blue">FlaminoUI</span>, this css
+          library will help you for building responsive, mobile-first sites,
+          with pre-built component.
+        </p>
+        <p class="text-6">Quick start</p>
+        <p>
+          Looking to quickly add FlamingoUI to your project? Usse a cdn link or
+          download the source files
+        </p>
+        <p class="text-6">CSS</p>
+        <p>
+          Copy-paste the stylesheet
+          <span class="inline-code">&lt;link></span> into your
+          <span class="inline-code">&lt;head></span> before all other
+          stylesheets to load our CSS.
+        </p>
+        <div class="flex snippet visibility">
+          <link
+            rel="stylesheet"
+            href="https://flamingoui.netlify.app/components/main.css"
+          />
+        </div>
+        <div class="html-code"></div>
 
+        <p class="text-6">JS</p>
+        <p>Many of our components require the use of JavaScript to function</p>
+        <p>
+          Place the following
+          <span class="inline-code">&lt;script></span> near the end of your
+          pages, right before the closing
+          <span class="inline-code"> &lt;/body></span> tag, to enable them.
+        </p>
+        <div class="flex snippet visibility">
+          <script src="https://flamingoui.netlify.app/components/component.js"></script>
+        </div>
+        <div class="html-code"></div>
       </main>
     </div>
 
     <!-- script -->
-    <script src="index.js"></script>
+    <script src="./documentation/index.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
