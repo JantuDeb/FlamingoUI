@@ -6,7 +6,7 @@
 @import url("./image.css");
 @import url("./input.css");
 @import url("./navigation.css");
-@import url('./list.css');
+@import url("./list.css");
 @import url("./text-utils.css");
 @import url("./modal.css");
 @import url("./grid.css");
@@ -99,8 +99,6 @@ body {
   color: var(--fu-body-color);
   background-color: var(--fu-body-bg);
 }
-
-
 
 p {
   margin-top: 0;
@@ -341,7 +339,6 @@ textarea {
   margin-right: 0.5rem;
 }
 
-
 /* BORDER RADIUS */
 .radius-sm {
   border-radius: 5px;
@@ -441,12 +438,12 @@ textarea {
   background: var(--fu-grad-blue);
 }
 
-.bg-green-light{
+.bg-green-light {
   background-color: var(--fu-green-light);
 }
 /* COLOR */
 .text-blue {
-  background-color: var(--fu-blue);
+  color: var(--fu-blue);
 }
 
 .text-white {
@@ -465,21 +462,21 @@ textarea {
   box-shadow: var(--fu-shadow-gray);
 }
 
-.text-green{
+.text-green {
   color: var(--fu-green);
 }
 
-.between{
+.between {
   justify-content: space-between;
 }
-.wrap{
+.wrap {
   flex-wrap: wrap;
 }
 
-.block{
+.block {
   display: block;
 }
 
-.border-b{
+.border-b {
   border-bottom: solid 1px var(--fu-dark);
 }
