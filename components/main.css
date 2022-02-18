@@ -12,6 +12,7 @@
 @import url("./grid.css");
 @import url("./toast.css");
 @import url("./rating.css");
+@import url("./color.css");
 
 /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
@@ -56,6 +57,10 @@
   --fu-danger: #dc3545;
   --fu-light: #f8f9fa;
   --fu-dark: #212529;
+  --fu-primary-dark: #111827;
+  --fu-accent-dark: #1c64f2;
+  --fu-body-color-dark: rgb(245, 235, 235);
+  --fu-secondary-dark: #1f2937;
   --fu-font-popins: "Popins", sans-serif;
   --fu-gradient: linear-gradient(
     180deg,
@@ -170,6 +175,10 @@ textarea {
 }
 
 /* GUTTER PADDING*/
+.p-0 {
+  padding: 0;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -245,6 +254,9 @@ textarea {
 }
 
 /* GUTTER MARGIN */
+.m-0 {
+  margin: 0;
+}
 .m-1 {
   margin: 0.25rem;
 }
@@ -373,22 +385,7 @@ textarea {
   font-weight: 700;
 }
 
-/* TEXT COLOR*/
 
-.text-danger {
-  color: var(--fu-danger);
-}
-
-.text-success {
-  color: var(--fu-success);
-}
-
-.text-warning {
-  color: var(--fu-warning);
-}
-.text-primary {
-  color: var(--fu-primary);
-}
 
 /* FLEX  */
 .flex {
@@ -399,75 +396,21 @@ textarea {
   display: flex;
   flex-direction: column;
 }
+
 .center {
   align-items: center;
   justify-content: center;
 }
 
-.wrap {
-  flex-wrap: wrap;
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
 }
 
-.between {
-  justify-content: space-between;
-}
-
-.block {
-  display: block;
-}
-
-.bg-blue {
-  background-color: var(--fu-blue);
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
-.bg-red {
-  background-color: var(--fu-red);
-}
-
-.bg-grad-red {
-  background: var(--fu-grad-red);
-}
-.bg-grad-pink {
-  background: var(--fu-grad-pink);
-}
-.bg-grad-blue {
-  background: var(--fu-grad-blue);
-}
-
-.bg-green-light {
-  background-color: var(--fu-green-light);
-}
-/* COLOR */
-.text-blue {
-  color: var(--fu-blue);
-}
-
-.text-white {
-  color: #fff;
-}
-
-.text-red {
-  color: var(--fu-red);
-}
-
-.text-dark {
-  color: var(--fu-dark);
-}
-
-.shadow-gray {
-  box-shadow: var(--fu-shadow-gray);
-}
-
-.text-green {
-  color: var(--fu-green);
-}
-
-.between {
-  justify-content: space-between;
+.justify-between {
+  justify-content: space-justify-between;
 }
 .wrap {
   flex-wrap: wrap;
