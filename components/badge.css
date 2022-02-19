@@ -55,11 +55,6 @@
   position: relative;
 }
 
-.badge-icon i {
-  font-size: 1.8rem;
-  color: var(--fu-primary);
-}
-
 .badge-icon-count {
   position: absolute;
   top: -8px;
