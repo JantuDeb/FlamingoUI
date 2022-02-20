@@ -43,54 +43,33 @@
       </ul>
     </aside>
     <main class="content-main p-4">
-      <p class="text-6">Text Utilities</p>
+      <p class="text-6">Slider</p>
       <p>
-        Input component is used to get input from user in a text field. You
-        can style input field by using light-weight style with different
-        classes available for input.
+        <span class="inline-code">&lt;input></span> elements of type range let the user specify a numeric value which
+        must be no less than a given value, and no more than another given value. This is typically
+        represented using a slider or dial control rather than a text entry box like the number input type.
       </p>
 
-      <p class="text-6">Headings</p>
-      <div class="snippet">
-        <h1>This is h1 heading</h1>
-        <h2>This is h2 heading</h2>
-        <h3>This is h3 heading</h3>
-        <h4>This is h4 heading</h4>
-        <h5>This is h5 heading</h5>
-        <h6>This is h6 heading</h6>
+      <p class="text-6">Slider</p>
+      <div class="toast-container snippet center">
+        <div>
+          <input type="range" id="volume" name="volume" min="0" max="11" class="range-slider">
+          <label for="volume">Volume</label>
+        </div>
+
+        <div>
+          <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+          <label for="cowbell">Cowbell</label>
+        </div>
       </div>
       <div class="html-code py-4"></div>
 
-      <p class="text-6">Paragraph Headings</p>
-      <div class="snippet">
-        <p class="text-1">This is text-1</p>
-        <p class="text-2">This is text-2</p>
-        <p class="text-3">This is text-3</p>
-        <p class="text-4">This is text-4</p>
-        <p class="text-5">This is text-5</p>
-        <p class="text-6">This is text-6</p>
-      </div>
-      <div class="html-code py-4"></div>
-
-      <p class="text-6">Text Alignment</p>
-      <div class="snippet">
-        <p class="text-start">This is text start</p>
-        <p class="text-center">This is text center</p>
-        <p class="text-end">This is text end</p>
-      </div>
-      <div class="html-code py-4"></div>
-
-      <p class="text-6">Text gray & text small</p>
-      <div class="snippet">
-        <p class="text-small">This is text small</p>
-        <p class="text-gray">This is text gray</p>
-      </div>
-      <div class="html-code py-4"></div>
 
     </main>
   </div>
 
   <!-- script -->
+  <script src="./../../components/component.js"></script>
   <script src="./../index.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   <script>
