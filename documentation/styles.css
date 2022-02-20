@@ -60,8 +60,8 @@ header {
   max-height: 40vh;
 }
 
-.inline-code{
-  color:var(--fu-red);
+.inline-code {
+  color: var(--fu-red);
   background-color: var(--fu-gray-300);
   padding: 0 0.2rem;
 }
@@ -107,4 +107,37 @@ header {
 .modal-container {
   height: 30vh;
   position: relative;
+}
+
+@media screen and (max-width: 40em) {
+  aside.sidebar {
+    overflow-y: hidden;
+    overflow-x: auto;
+    flex-basis: auto;
+    height: fit-content;
+    width: 100vw;
+    padding: 0.5rem 0.5rem;
+  }
+  .sidebar-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .content-main {
+    overflow-y: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .sidebar-list li {
+    margin: 0 0.5rem;
+  }
+
+  .sidebar-list li > h6 {
+    display: none;
+  }
 }
