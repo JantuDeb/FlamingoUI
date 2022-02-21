@@ -1,0 +1,7 @@
+.range-primary {
+  accent-color: var(--fu-primary-dark);
+}
+.range-secondary {
+  accent-color: var(--fu-red);
+}
+

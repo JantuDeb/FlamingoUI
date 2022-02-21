@@ -52,14 +52,15 @@
 
       <p class="text-6">Slider</p>
       <div class="toast-container snippet center">
-        <div>
-          <input type="range" id="volume" name="volume" min="0" max="11" class="range-slider">
-          <label for="volume">Volume</label>
+        <div class="flex item-center">
+          <input type="range"  name="volume" min="0" max="11" class="range-primary range">
+          <label for="volume" class="value"></label>
         </div>
 
-        <div>
-          <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
-          <label for="cowbell">Cowbell</label>
+        <div class="flex item-center">
+          <input type="range"  name="cowbell" min="0" max="100" value="90" step="10"
+            class="range-secondary range">
+          <label for="cowbell" class="value"></label>
         </div>
       </div>
       <div class="html-code py-4"></div>
